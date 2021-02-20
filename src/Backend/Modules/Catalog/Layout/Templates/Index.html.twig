@@ -12,33 +12,35 @@
 {% endblock %}
 
 {% block content %}
-  <div class="content-block content-block-p">
+  <div class="content-block">
     {{ form_start(form) }}
-    <div class="row">
-      <div class="col-md-4">
-        <div class="form-group">
-          {{ form_label(form.category) }}
-          {{ form_widget(form.category) }}
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              {{ form_label(form.category) }}
+              {{ form_widget(form.category) }}
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              {{ form_label(form.sku) }}
+              {{ form_widget(form.sku) }}
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          {{ form_label(form.sku) }}
-          {{ form_widget(form.sku) }}
-        </div>
-      </div>
-      <div class="col-md-4">
-        &nbsp;
+      <div class="panel-footer">
         <div class="btn-toolbar">
           <div class="btn-group pull-right">
-            <button id="search" type="submit" class="btn btn-primary" name="search">
-              <span class="fa fa-refresh"></span>&nbsp;
-              {{ 'lbl.UpdateFilter'|trans|ucfirst }}
-            </button>
+            {{ macro.buttonIcon('', 'refresh', 'lbl.UpdateFilter'|trans|ucfirst, 'btn-primary', { "type":"submit", "id":"search", "name":"search" }) }}
           </div>
         </div>
       </div>
     </div>
+    
     {{ form_end(form) }}
   </div>
 

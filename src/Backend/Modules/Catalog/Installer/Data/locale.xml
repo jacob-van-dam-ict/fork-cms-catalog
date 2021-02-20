@@ -66,6 +66,10 @@
         <translation language="nl"><![CDATA[media]]></translation>
         <translation language="en"><![CDATA[media]]></translation>
       </item>
+      <item type="label" name="Category">
+        <translation language="nl"><![CDATA[categorie]]></translation>
+        <translation language="en"><![CDATA[category]]></translation>
+      </item>
       <item type="label" name="InCategory">
         <translation language="nl"><![CDATA[in categorie]]></translation>
         <translation language="en"><![CDATA[in category]]></translation>
@@ -1031,6 +1035,14 @@
         <translation language="nl"><![CDATA[Google taxonomie id]]></translation>
         <translation language="en"><![CDATA[Google taxonomy id]]></translation>
       </item>
+      <item type="label" name="New">
+        <translation language="nl"><![CDATA[nieuw]]></translation>
+        <translation language="en"><![CDATA[new]]></translation>
+      </item>
+      <item type="label" name="ShopSettings">
+        <translation language="nl"><![CDATA[winkelinstellingen]]></translation>
+        <translation language="en"><![CDATA[shop settings]]></translation>
+      </item>
     </Catalog>
     <Core>
       <item type="label" name="Catalog">
@@ -1162,6 +1174,12 @@
         <translation language="en"><![CDATA[guest order tracking]]></translation>
       </item>
     </Core>
+    <Pages>
+      <item type="label" name="Brands">
+        <translation language="nl"><![CDATA[merken]]></translation>
+        <translation language="en"><![CDATA[brands]]></translation>
+      </item>
+    </Pages>
   </Backend>
 
   <Frontend>
